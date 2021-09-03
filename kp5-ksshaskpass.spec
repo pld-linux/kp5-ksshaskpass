@@ -1,14 +1,14 @@
-%define		kdeplasmaver	5.22.4
+%define		kdeplasmaver	5.22.5
 %define		qtver		5.9.0
 %define		kpname		ksshaskpass
 Summary:	ssh-add helper that uses kwallet and kpassworddialog
 Name:		kp5-%{kpname}
-Version:	5.22.4
+Version:	5.22.5
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
 Source0:	http://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	239d00ede4c0e941dc6407f8510f1678
+# Source0-md5:	2d17696a462d4b1abc3f8b50811ba78c
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= %{qtver}
 BuildRequires:	cmake >= 2.8.12
