@@ -1,27 +1,27 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	5.27.10
+%define		kdeplasmaver	5.93.0
 %define		qtver		5.15.2
 %define		kpname		ksshaskpass
 Summary:	ssh-add helper that uses kwallet and kpassworddialog
 Name:		kp5-%{kpname}
-Version:	5.27.10
-Release:	1
+Version:	5.93.0
+Release:	0.1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Libraries
-Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	e95d6813c180b078be4bf40550791e26
+Source0:	https://download.kde.org/unstable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
+# Source0-md5:	18f6fa11240da287adf75cb72be61fe9
 URL:		http://www.kde.org/
-BuildRequires:	Qt5Core-devel >= %{qtver}
+BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16.0
-BuildRequires:	kf5-extra-cmake-modules >= 1.4.0
-BuildRequires:	kf5-kcoreaddons-devel
-BuildRequires:	kf5-ki18n-devel
-BuildRequires:	kf5-kwallet-devel
-BuildRequires:	kf5-kwidgetsaddons-devel
+BuildRequires:	kf6-extra-cmake-modules >= 1.4.0
+BuildRequires:	kf6-kcoreaddons-devel
+BuildRequires:	kf6-ki18n-devel
+BuildRequires:	kf6-kwallet-devel
+BuildRequires:	kf6-kwidgetsaddons-devel
 BuildRequires:	ninja
-BuildRequires:	qt5-build >= %{qtver}
+BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.164
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
